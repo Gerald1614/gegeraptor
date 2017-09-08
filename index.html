@@ -52,7 +52,6 @@
 <div id="portfolio" class="container">
 <h1>Portfolio</h1>
   <div class="row">
-
     <div class="col-sm-3">
       <div class="projectTags btn-group btn-group-sm">
         <button type="button" class="btn btn-primary">HTML</button>
@@ -86,6 +85,22 @@
     </div>
     <div class="col-sm-3">
       <div class="projectTags btn-group btn-group-sm">
+        <button type="button" class="btn btn-primary">HTML</button>
+        <button type="button" class="btn btn-success">CSS</button>
+        <button type="button" class="btn btn-success">bootstrap</button>
+        <button type="button" class="btn btn-warning">Javascript</button>
+      </div>
+      <div class="img_wrap">
+        <img alt="freecodecamp projects" class="img-responsive" src="images/freecodecamp.jpeg">
+        <div class="overlay">
+          <a class="text" data-toggle="modal" href="#modalFreeCodeCamp">freecodecamp projects</a>
+        </div>
+      </div>
+      <p class="description">Various projects developped during freecodecamp certification</p>
+
+    </div>
+    <div class="col-sm-3">
+      <div class="projectTags btn-group btn-group-sm">
         <button type="button" class="btn btn-danger">NodeJS</button>
         <button type="button" class="btn btn-danger">MongoDB</button>
       </div>
@@ -96,6 +111,9 @@
         </div>
       </div>
     </div>
+
+  </div>
+  <div class="row">
     <div class="col-sm-3">
       <div class="projectTags btn-group btn-group-sm">
         <button type="button" class="btn btn-primary">HTML</button>
@@ -111,9 +129,32 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
     <a role="button" class="btn btn-success btn-block" href="https://bitbucket.org/GeraldM1614/" target="_blank"><img alt="bitckucket repository" src="images/bitbucketlogo.png" title=" a few personnal projects developped in NodeJs, showcasing API calls, MongoDB, Google Map integration, canvas..." style="width:25%; margin: 0 auto;"></a>
 
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalFreeCodeCamp" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">freeCodeCamp Projects</h4>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><a href="https://codepen.io/gege_raptor/pen/xLPXpm" target="_blank">Random Quote Generator on CodePen</a></li>
+            <li><a href="https://local-weather-app.myportfolio.gegeraptor.com/" target="_blank">Local weather app</a></li>
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 <!-- content second page-->
@@ -176,7 +217,7 @@
     </ul>
     </div>
     </div>
-    
+
 
   <div class="icone">
   <a href="https://www.facebook.com/gerald.michelant" target="_blank" class="fa fa-facebook"></a>
