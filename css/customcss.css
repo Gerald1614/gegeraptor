@@ -122,8 +122,12 @@ padding: 0px;
   -o-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
-
 }
+
+.img-responsive {
+  min-width: 100px;
+ }
+
 .img_wrap {
   position: relative;
   margin-top: 5%;
