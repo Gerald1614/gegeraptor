@@ -122,12 +122,14 @@ padding: 0px;
   -o-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
+  min-width: 100px;
 }
 
-.img-responsive {
-  min-width: 100px;
- }
-
+.logo {
+  width:10%;
+  display:inline-block;
+  margin-left:15px;
+}
 .img_wrap {
   position: relative;
   margin-top: 5%;
