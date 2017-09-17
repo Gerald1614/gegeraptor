@@ -7,38 +7,34 @@
   <meta name="keywords" content="HTML5,CSS,JavaScript,bootstrap,Gerald, Michelant">
   <meta name="author" content="Gerald Michelant">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/customcss.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="icon" type="image/png" href="images/raptor.png">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSAoC3GRt9gaupzO1w1oBo-IIMsj0-Aaw"></script>
-      <script src="./js/portfolio.js"></script>
+  
   </head>
-<body data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
+  <nav class="navbar navbar-expand-md navbar-inverse navbar-toggleable-sm navbar-dark fixed-top">
 
-<header>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> Gege Raptor</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#portfolio">My Portfolio</a></li>
-          <li><a href="#about">About Me</a></li>
+    <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <a class="navbar-brand" href="#"><span class="fa fa-home"></span> Gege Raptor</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">My Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
       </ul>
     </div>
   </div>
-</nav>
-</header>
+  </nav>
+
+<header>
 <div class="jumbotron text-center">
 
   <h1>Gerald Michelant</h1>
@@ -46,17 +42,17 @@
   <img alt="Mobile View" src="images/mobileView.png" class="img-responsive" style="width:20%; position:absolute; right:0px; bottom:0px;">
   <p><q>Gege Raptor</q></p>
 </div>
-
+</header>
 <!-- content first page-->
 
 <div id="portfolio" class="container">
 <h1>Portfolio</h1>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="projectTags btn-group btn-group-sm">
-        <button type="button" class="btn btn-primary">HTML</button>
-        <button type="button" class="btn btn-success">CSS3</button>
-        <button type="button" class="btn btn-warning">Javascript</button>
+  <div class="row align-items-start">
+    <div class="col-md-3">
+      <div class="container">
+          <span class="badge badge-primary">HTML</span>
+          <span class="badge badge-success">CCS3</span>
+          <span class="badge badge-warning">Javascript</span>
       </div>
       <div class="img_wrap">
         <img alt="rugby club des Gaulois" class="img-responsive" src="images/pageGaulois.jpeg">
@@ -67,12 +63,12 @@
     <p class="description">live website in production since begining 2017</p>
 
     </div>
-    <div class="col-sm-3">
-      <div class="projectTags btn-group btn-group-sm">
-        <button type="button" class="btn btn-primary">HTML</button>
-        <button type="button" class="btn btn-success">CSS</button>
-        <button type="button" class="btn btn-success">bootstrap</button>
-                <button type="button" class="btn btn-warning">Javascript</button>
+    <div class="col-md-3">
+      <div class="container">
+          <span class="badge badge-primary">HTML</span>
+          <span class="badge badge-success">CCS3</span>
+          <span class="badge badge-success">Bootstrap</span>
+          <span class="badge badge-warning">Javascript</span>
       </div>
       <div class="img_wrap">
         <img alt="short tribute to Paoli" class="img-responsive" src="images/tributePaoli.jpeg">
@@ -83,12 +79,12 @@
       <p class="description">website designed for the capstone of web design course delivered by University of Michigan</p>
 
     </div>
-    <div class="col-sm-3">
-      <div class="projectTags btn-group btn-group-sm">
-        <button type="button" class="btn btn-primary">HTML</button>
-        <button type="button" class="btn btn-success">CSS</button>
-        <button type="button" class="btn btn-success">bootstrap</button>
-        <button type="button" class="btn btn-warning">Javascript</button>
+    <div class="col-md-3">
+        <div class="container">
+            <span class="badge badge-primary">HTML</span>
+            <span class="badge badge-success">CCS3</span>
+            <span class="badge badge-success">Bootstrap</span>
+            <span class="badge badge-warning">Javascript</span>
       </div>
       <div class="img_wrap">
         <img alt="freecodecamp projects" class="img-responsive" src="images/freecodecamp.jpeg">
@@ -99,10 +95,10 @@
       <p class="description">Various projects developped during freecodecamp certification</p>
 
     </div>
-    <div class="col-sm-3">
-      <div class="projectTags btn-group btn-group-sm">
-        <button type="button" class="btn btn-danger">NodeJS</button>
-        <button type="button" class="btn btn-danger">MongoDB</button>
+    <div class="col-md-3">
+        <div class="container">
+            <span class="badge badge-danger">NodeJS</span>
+            <span class="badge badge-danger">MongoDB</span>
       </div>
       <div class="img_wrap">
         <img alt="future projects" class="img-responsive" src="images/code-1076536_960_720.jpg">
@@ -111,16 +107,14 @@
         </div>
       </div>
     </div>
-
   </div>
   <div class="row">
-    <div class="col-sm-3">
-      <div class="projectTags btn-group btn-group-sm">
-        <button type="button" class="btn btn-primary">HTML</button>
-        <button type="button" class="btn btn-primary">Angular</button>
-        <button type="button" class="btn btn-success">CSS</button>
-        <button type="button" class="btn btn-warning">Javascript</button>
-
+    <div class="col-md-3">
+        <div class="container">
+            <span class="badge badge-primary">HTML</span>
+            <span class="badge badge-primary">Angular</span>
+            <span class="badge badge-success">CCS3</span>
+            <span class="badge badge-warning">Javascript</span>
       </div>
       <div class="img_wrap">
         <img alt="future projects" class="img-responsive" src="images/code-1076536_960_720.jpg">
@@ -130,10 +124,11 @@
       </div>
     </div>
   </div>
-    <a role="button" class="btn btn-success btn-block" href="https://bitbucket.org/GeraldM1614/" target="_blank"><img alt="bitckucket repository" src="images/bitbucketlogo.png" title=" a few personnal projects developped in NodeJs, showcasing API calls, MongoDB, Google Map integration, canvas..." style="width:25%; margin: 0 auto;"></a>
-
+ 
   </div>
-
+  <div class="container mx-auto m-5">
+      <a role="button" class="btn btn-success btn-block" href="https://bitbucket.org/GeraldM1614/" target="_blank"><img alt="bitckucket repository" src="images/bitbucketlogo.png" title=" a few personnal projects developped in NodeJs, showcasing API calls, MongoDB, Google Map integration, canvas..." style="width:25%; margin: 0 auto;"></a>
+    </div>
 
   <!-- Modal -->
   <div class="modal fade" id="modalFreeCodeCamp" role="dialog">
@@ -166,90 +161,117 @@
       <h1>Passion for development</h1>
         <p>Started programing assembly language in industrial IT studies, I then learned many languages but decided to pursue specialisation in Javascript. I have been developping applications in NodeJS for two years and Angular since begining of 2017.</p>
         <p> Good knowledge on front end and full stack development.</p>
-      </div>
-      </div>
-      <div class="row">
-        <h1>What defines me</h1>
-         <table class="table table-bordered">
-           <tbody>
-              <tr>
-                <td><span class="glyphicon glyphicon-king"></span> Problem solver</td>
-                <td><span class="glyphicon glyphicon-search"></span> Curious</td>
-                <td><span class="glyphicon glyphicon-education"></span> Perpetually Learning</td>
-              </tr>
-              <tr>
-                <td><span class="glyphicon glyphicon-fire"></span> Passionnate</td>
-                <td><span class="glyphicon glyphicon-pushpin"></span> Focused</td>
-                <td><span class="glyphicon glyphicon-road"></span> Always looking ahead</td>
-              </tr>
-            </tbody>
-          </table>
-      </div>
-
-
-      <div id="passion" class="container-fluid">
-        <div class="row">
-          <h1>Who I am</h1>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-            <a><span class="glyphicon glyphicon-map-marker"></span> Live in Montreal</a>
-            </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
-          <a href="http://caribousgivres.blogspot.ca/" target="_blank"><span class="glyphicon glyphicon-globe"></span> 2013 roadtrip</a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <a href="https://www.pivotal.io" target="_blank"><span class="glyphicon glyphicon-cog"></span> Work at Pivotal</a>
-          </div>
-      </div>
-      <figure>
-        <a href="http://www.rugbyclubmontreal.com/" target="_blank">  <img alt="gege Rugby" class="img-responsive" style="width:33%; display:inline" src="images/gege-rugby2017.jpg"></a>
-        <figcaption>Rugby Player and President of a rugby school</figcaption>
-    </figure>
     </div>
+  </div>
+  <div class="card">
+      <div class="card-block">
+      <h1>What defines me</h1>
+      <div class="row justify-content-center">
+          <div class="col-sm-10 col-md-4">
+            <span class="fa fa-microchip"> Problem solver</span>
+          </div>
+          <div class="col-sm-10 col-md-4">
+              <span class="fa fa-search"> Curious</span>
+          </div>
+          <div class="col-sm-10 col-md-4">
+              <span class="fa fa-graduation-cap"> Perpetually Learning</span>
+          </div>
+       </div>
+
+      <div class="row justify-content-center">
+          <div class="col-sm-10 col-md-4">
+          <span class="fa fa-fire"> Passionnate</span>
+        </div>
+        <div class="col-sm-10 col-md-4">
+          <span class="fa fa-bullseye"> Focused</span>
+        </div>
+        <div class="col-sm-10 col-md-4">
+          <span class="fa fa-road"> Always looking ahead</span>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+      <div id="passion"class="card">
+          <div class="card-block">
+      <h1>Who I am</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <a><span class="fa fa-map-marker"></span> Live in Montreal</a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <a href="http://caribousgivres.blogspot.ca/" target="_blank"><span class="fa fa-globe"></span> 2013 roadtrip</a>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <a href="https://www.pivotal.io" target="_blank"><span class="fa fa-cog"></span> Work at Pivotal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card">
+        <img alt="gege Rugby" class="card-img-top img-responsive" style="width:100%" src="images/gege-rugby2017.jpg">
+        <p class="card-text">Rugby Player and President of a rugby school <a href="http://gaulois-rugby.myportfolio.gegeraptor.com" target="_blank">(Club de Rugby des Gaulois)</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
   <div id="certif" class="container-fluid">
-      <h3><span class="glyphicon glyphicon-certificate"></span> Certifications :</h3>
-      <div class="row equal">
-      <div class="col-xs-2">
-          <img alt="Coursera logo" class="img-responsive rotate270" src="images/coursera-logo.png">
-      </div>
-      <div class="col-xs-10">
-        <div class="row">
-        <h4 style="display:inline-block;">Web design certificate earned on Sept. 15, 2017 by University of Michigan</h4>
-          <img alt="University Michigan logo" class="img-responsive logo" src="images/UMlogo.png">
-        <ul>
-        <li>Introduction to HTML5 by University of Michigan on Coursera. Certificate earned on August 16, 2017</li>
-        <li>Introduction to CSS3 by University of Michigan on Coursera. Certificate earned on August 20, 2017</li>
-        <li>Interactivity with JavaScript by University of Michigan on Coursera. Certificate earned on August 23, 2017</li>
-        <li>Advanced Styling with Responsive Design by University of Michigan on Coursera. Certificate earned on August 23, 2017</li>
-        <li>Web Design Capstone by University of Michigan on Coursera. Certificate earned on September 15, 2017</li>
-      </ul>
-      </div>
-      <div class="row">
-      <h4 style="display:inline;">Full Stack Web and Multiplatform Mobile App Development by The Hong Kong University of Science and Technology</h4>
-      <img alt="University HK logo" class="img-responsive logo" src="images/HKUSTlogo.png">
-      <ul>
-        <li>Front-End Web UI Frameworks and Tools: Bootstrap 4 by The Hong Kong University of Science and Technology</li>
-        <li>...</li>
-        </ul>
-    </div>
     <div class="row">
-    <h4 style="display:inline;">Bitcoin and Cryptocurrency Technologies by Princeton University</h4>
-      <img alt="University HK logo" class="img-responsive logo" src="images/princetonlogo.png">
+      <h1><i class="fa fa-certificate"></i> Certifications :</h1>
+      <div class="media">
+          <img alt="Coursera logo" class="d-flex col-2 mr-3 align-self-start" src="images/coursera-logo.png">
+        <div class="media-body">
+            <ul class="list-unstyled">
+                <li class="media">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Web design certificate earned on Sept. 15, 2017 by University of Michigan</h5>
+                    <ul>
+                        <li>Introduction to HTML5 by University of Michigan on Coursera. Certificate earned on August 16, 2017</li>
+                        <li>Introduction to CSS3 by University of Michigan on Coursera. Certificate earned on August 20, 2017</li>
+                        <li>Interactivity with JavaScript by University of Michigan on Coursera. Certificate earned on August 23, 2017</li>
+                        <li>Advanced Styling with Responsive Design by University of Michigan on Coursera. Certificate earned on August 23, 2017</li>
+                        <li>Web Design Capstone by University of Michigan on Coursera. Certificate earned on September 15, 2017</li>
+                      </ul>
+                    </div>
+                    <img class="col-1 mr-3 d-none d-lg-block" src="images/UMlogo.png" alt="University Michigan logo">
+                </li>
+                <li class="media my-4">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Full Stack Web and Multiplatform Mobile App Development by The Hong Kong University of Science and Technology</h5>
+                      <ul>
+                        <li>Front-End Web UI Frameworks and Tools: Bootstrap 4 by The Hong Kong University of Science and Technology</li>
+                        <li>...</li>
+                      </ul>  
+                  </div>
+                  <img class="col-1 mr-3 d-none d-lg-block" src="images/HKUSTlogo.png" alt="University HK logo">
+                </li>
+                <li class="media">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Bitcoin and Cryptocurrency Technologies by Princeton University</h5>
+                    in completion...
+                  </div>
+                  <img class="col-1 mr-3 d-none d-lg-block" src="images/princetonlogo.png" alt="Princeton university logo">
+                </li>
+              </ul>
       </div>
     </div>
   </div>
-        <div class="row equal">
-            <div class="col-xs-2">
-                <img alt="freeCodeCamp logo" class="img-responsive rotate270" src="images/freecodecamp.jpeg">
-            </div>
-        <div class="col-xs-10">
-      <h4 style="display:inline-block;">freeCodeCamp</h4>
-      <ul>
-      <li>Currently finalising Front End Development certificate</li>
-    </ul>
-  </div>
-  </div>
+  <div class="row">
+    <div class="media">
+      <img alt="freeCodeCamp logo" class="d-flex col-2 mr-3 align-self-start" src="images/freecodecamp.jpeg">
+      <div class="media-body">
+       <h4 class="mt-0">freeCodeCamp</h4>
+      Currently finalising Front End Development certificate
+      </div>
     </div>
+  </div>
+</div>
 
 
   <div class="icone">
@@ -257,7 +279,13 @@
   <a href="https://twitter.com/GMichelant" target="_blank" class="fa fa-twitter"></a>
   <a href="https://www.linkedin.com/in/geraldmichelant/" target="_blank" class="fa fa-linkedin"></a>
 </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
+  <link rel="icon" type="image/png" href="images/raptor.png">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSAoC3GRt9gaupzO1w1oBo-IIMsj0-Aaw"></script>
+    <script src="./js/portfolio.js"></script>
 <footer>
 <div class="container-fluid">
     <hr>

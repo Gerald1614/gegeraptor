@@ -1,5 +1,6 @@
 .navbar{
   margin: 8px 16px 0px 16px;
+  background-color: #222;
 }
 
 body{
@@ -8,11 +9,17 @@ body{
   font-family: 'Open Sans', sans-serif;
   margin:16px;
 }
-.row {
-  margin-bottom: 5%;
+
+.card{
+  background-color: #666;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #222;
+  padding: 2%;
+  margin: 2%;
 }
-.row:first-of-type {
-  margin-top: 2%;
+.row{
+  margin-top: 5%;
 }
 .jumbotron{
     color: #fff;
@@ -31,15 +38,9 @@ q {
   text-transform: uppercase;
 }
 
-.btn-group a {
-padding-left: 0;
-padding-right: 0;
-font-size: 90%;
-}
-
 #passion a{
   font-family: fantasy;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 5%;
   margin: 5%;
 }
@@ -68,68 +69,38 @@ font-size: 90%;
   height: auto;
 }
 
-table.table-bordered{
-    border:2px solid #444;
-    margin-top: 10px;
-  }
-table.table-bordered > thead > tr > th{
-    border:2px solid #444;
+.media img{
+  min-width: 100px;
 }
-table.table-bordered > tbody > tr > td{
-    border:2px solid #444;
-}
-
-td .glyphicon {
-  color:#bf3636;
+#about .fa {
   font-size: 150%;
   vertical-align: middle;
 }
 
-#certif .glyphicon {
+#certif .fa {
   color:#FFD700;
-  font-size: 300%;
+  font-size: 200%;
   vertical-align: middle;
 }
-#passion .glyphicon {
+#passion .fa {
   font-size: 150%;
-  vertical-align: middle;
   margin-bottom: 15px;
+  vertical-align: middle;
 }
 
 
 #about a{
   color:#000;
 }
-#about a:hover,  #portfolio a:hover {
+#about a:hover,  #portfolioa:hover {
     color:#bf3636;
     text-decoration: underline;
 }
 
 .col-md-4, .col-lg-4 {
-padding: 0px;
-
-}
-.equal {
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  align-items: center;
+  padding: 0px;
 }
 
-.rotate270 {
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  min-width: 100px;
-}
-
-.logo {
-  width:10%;
-  display:inline-block;
-  margin-left:15px;
-}
 .img_wrap {
   position: relative;
   margin-top: 5%;
@@ -208,7 +179,7 @@ footer{
     right:10px;
 }
 
-.fa {
+.icone .fa {
 
   padding: 10px;
   font-size: 2em;
@@ -217,10 +188,6 @@ footer{
   text-decoration: none;
   border-radius: 50%;
   margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
 }
 
 .fa-facebook {
