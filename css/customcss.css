@@ -7,7 +7,7 @@ body{
   background-color: #444;
   color: #000;
   font-family: 'Open Sans', sans-serif;
-  margin:16px;
+  margin:32px 16px 16px 16px;
 }
 
 .card{
@@ -38,11 +38,11 @@ q {
   text-transform: uppercase;
 }
 
-#passion a{
+#about a{
   font-family: fantasy;
   font-size: 1.5em;
-  padding: 5%;
-  margin: 5%;
+  padding: 2%;
+  margin: 2%;
 }
 
 #certif{
@@ -72,9 +72,11 @@ q {
 .media img{
   min-width: 100px;
 }
+
 #about .fa {
   font-size: 150%;
   vertical-align: middle;
+
 }
 
 #certif .fa {
@@ -82,17 +84,13 @@ q {
   font-size: 200%;
   vertical-align: middle;
 }
-#passion .fa {
-  font-size: 150%;
-  margin-bottom: 15px;
-  vertical-align: middle;
-}
-
 
 #about a{
   color:#000;
+  float: left;
 }
-#about a:hover,  #portfolioa:hover {
+
+#passion a:hover,  #portfolio a:hover {
     color:#bf3636;
     text-decoration: underline;
 }
