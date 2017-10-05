@@ -3,12 +3,12 @@
 var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     browserSync = require('browser-sync');
-    var jshint = require('gulp-jshint');
     var autoprefix = require('gulp-autoprefixer');
     var concat = require('gulp-concat');
-    var minifyCSS = require('gulp-minify-css');
+    var minify = require('gulp-minify-css');
     var uglify = require('gulp-uglify');
-    var rename = require('gulp-rename');
+    var changed = require('gulp-changed');
+    var htmlmin = require('gulp-htmlmin');
 
     gulp.task('browser-sync', function () {
         var files = [
@@ -25,39 +25,40 @@ var gulp = require('gulp'),
         });
      
      });
+     
+     gulp.task('minifyhtml', function() {
+        return gulp.src('*.html')
+          .pipe(htmlmin({collapseWhitespace: true}))
+          .pipe(gulp.dest('dist'));
+      });
 
-     gulp.task('styles', function() {
-        gulp.src(['css/*.css'])
-        .pipe(concat('styles.css'))
-        .pipe(autoprefix('last 2 versions'))
-        .pipe(minifyCSS())
-        .pipe(gulp.dest('dist/css'));
-     });
-     
-     
      // Images
     gulp.task('imagemin', function() {
-    return gulp.src('images/*.{png,jpg,gif, jpeg}')
-      .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-      .pipe(gulp.dest('dist/images'));
-  });
+        gulp.src('images/*.{png,jpg,gif, jpeg}')
+        .pipe(changed('dist/images'))
+        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+        .pipe(gulp.dest('dist/images'));
+        });
 
-    // Concatenate & Minify JS
+    // Concatenate  JS
 gulp.task('scripts', function() {
-    return gulp.src('*.html')
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(rename('all.min.js'))
+    return gulp.src('js/*.js')
+        .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 
-
+gulp.task('css', function(){
+    gulp.src('css/*.css')
+    .pipe(concat('styles.css'))
+    .pipe(minify())
+    .pipe(gulp.dest('dist/css/'));
+ });
 
      // Default task
-     gulp.task('default', ['browser-sync'], function() {
-  
+     gulp.task('default', ['browser-sync', 'imagemin', 'scripts', 'css' ], function() {
+           
      });
 
       
-      gulp.task('build',['imagemin', 'styles'], function() {});
+      gulp.task('build',['imagemin', 'scripts', 'css','minifyhtml'], function() {});
