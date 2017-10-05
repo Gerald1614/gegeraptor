@@ -34,7 +34,7 @@ var gulp = require('gulp'),
 
      // Images
     gulp.task('imagemin', function() {
-        gulp.src('images/*.{png,jpg,gif, jpeg}')
+        gulp.src('images/*.{png,jpg,gif,jpeg}')
         .pipe(changed('dist/images'))
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
         .pipe(gulp.dest('dist/images'));
@@ -43,14 +43,14 @@ var gulp = require('gulp'),
     // Concatenate  JS
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
-        .pipe(concat('script.js'))
+        .pipe(concat('portfolio.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('css', function(){
     gulp.src('css/*.css')
-    .pipe(concat('styles.css'))
+    .pipe(concat('customcss.css'))
     .pipe(minify())
     .pipe(gulp.dest('dist/css/'));
  });
