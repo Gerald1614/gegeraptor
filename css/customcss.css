@@ -69,6 +69,16 @@ q {
   height: auto;
 }
 
+.techLogo {
+  background-color: rgb(12, 12, 12);
+  border-radius: 80px;
+}
+.techLogo img{
+  width: auto !important;
+ height: 64px !important;
+  margin: 20px auto;
+}
+
 .media img{
   min-width: 100px;
 }
@@ -97,6 +107,10 @@ q {
 
 .col-md-4, .col-lg-4 {
   padding: 0px;
+}
+
+.modal-sm img{
+  width:100%;
 }
 
 .img_wrap {
