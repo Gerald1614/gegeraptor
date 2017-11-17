@@ -70,12 +70,12 @@ q {
 }
 
 .techLogo {
-  background-color: rgb(12, 12, 12);
+  background-color: black;
   border-radius: 80px;
 }
 .techLogo img{
   width: auto !important;
- height: 64px !important;
+ width: 40% !important;
   margin: 20px auto;
 }
 
