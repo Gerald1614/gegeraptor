@@ -14,7 +14,7 @@ var gulp = require('gulp'),
         var files = [
            './*.html',
            './css/*.css',
-           './images/*.{png,jpg,gif, jpeg}',
+           './images/*.{png,jpg,gif,svg,jpeg}',
            './js/*.js'
         ];
      
@@ -34,7 +34,7 @@ var gulp = require('gulp'),
 
      // Images
     gulp.task('imagemin', function() {
-        gulp.src('images/*.{png,jpg,gif,jpeg}')
+        gulp.src('images/*.{png,jpg,gif,svg,jpeg}')
         .pipe(changed('dist/images'))
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
         .pipe(gulp.dest('dist/images'));
