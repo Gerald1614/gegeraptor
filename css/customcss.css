@@ -70,8 +70,9 @@ q {
 }
 
 .techLogo {
-  background-color: black;
+  background-color: #222222;
   border-radius: 80px;
+  margin-top: 10px;
 }
 .techLogo img{
   width: auto !important;
